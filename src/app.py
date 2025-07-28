@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from pdf_utils import prepare_pdf_content
 from api_client import get_gemini_response
