@@ -1,4 +1,3 @@
-python-poppler
 poppler-utils
 pdf2image
 pillow==10.4.0
