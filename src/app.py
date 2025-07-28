@@ -8,8 +8,9 @@ from PIL import Image
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # Page configuration
-st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open("..\\assets\\icon.png"), layout="wide")
-
+## for windowes st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open("..\\assets\\icon.png"), layout="wide")
+## to lunix and stramlit cloud deploy 
+st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open("../assets/icon.png"), layout="wide")
 
 # st.markdown(...): Allows raw HTML/CSS to be rendered in the app.
 # button[kind="primary"]: Targets Streamlit’s primary buttons (used for “Analyze Resume”).
