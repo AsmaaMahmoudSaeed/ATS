@@ -52,7 +52,7 @@ st.markdown(
 )
 
 # Header with logo
-st.image("LOGO_PATH, caption="ATS Resume Expert Logo", width=100)
+st.image(LOGO_PATH, caption="ATS Resume Expert Logo", width=100)
 st.header("ATS Resume Expert", anchor=False)
 
 # Initialize session state
