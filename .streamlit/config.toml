@@ -1,0 +1,7 @@
+[theme]
+base = "dark"
+primaryColor = "#66BB6A"  # Light green for accents
+backgroundColor = "#212121"  # Dark gray for main content
+secondaryBackgroundColor = "#424242"  # Slightly lighter gray for sidebar
+textColor = "#FAFAFA"  # Off-white for text
+font = "sans serif"
