@@ -1,7 +1,7 @@
 streamlit==1.47.1
 google-generativeai==0.8.5
 python-dotenv==1.1.1
-python-poppler
+python-poppler==0.4.1
 pdf2image
 pillow==10.4.0
 pytest==8.4.1
