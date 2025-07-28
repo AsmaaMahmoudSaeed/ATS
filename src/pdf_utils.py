@@ -3,9 +3,10 @@ import io
 import base64
 from config import IMAGE_MIME_TYPE
 
+
 def convert_pdf_to_image(pdf_file):
     """Convert a PDF file to a list of PIL images."""
-    return convert_from_bytes(pdf_file.read())
+    return convert_from_bytes(pdf_file.read(),poppler_path='/usr/bin/')
 
 def image_to_base64_jpeg(image):
     """Convert a PIL image to base64-encoded JPEG."""
