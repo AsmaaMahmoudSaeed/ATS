@@ -7,10 +7,15 @@ from PIL import Image
 
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ASSETS_DIR = os.path.join(BASE_DIR, "..", "assets")
+ICON_PATH = os.path.join(ASSETS_DIR, "icon.png")
+LOGO_PATH = os.path.join(ASSETS_DIR, "resume_logo.png")
+
 # Page configuration
 ## for windowes st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open("..\\assets\\icon.png"), layout="wide")
 ## to lunix and stramlit cloud deploy 
-st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open("../assets/icon.png"), layout="wide")
+st.set_page_config(page_title="ATS Resume Expert", page_icon=Image.open(ICON_PATH), layout="wide")
 
 # st.markdown(...): Allows raw HTML/CSS to be rendered in the app.
 # button[kind="primary"]: Targets Streamlit’s primary buttons (used for “Analyze Resume”).
@@ -47,7 +52,7 @@ st.markdown(
 )
 
 # Header with logo
-st.image("..\\assets\\resume_logo.png", caption="ATS Resume Expert Logo", width=100)
+st.image("LOGO_PATH, caption="ATS Resume Expert Logo", width=100)
 st.header("ATS Resume Expert", anchor=False)
 
 # Initialize session state
