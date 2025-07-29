@@ -8,6 +8,8 @@ analyzes resumes against job descriptions, providing detailed
 evaluations and percentage match scores to identify the best candidates.
 The application is built with Streamlit and deployed on Streamlit Cloud
 for an intuitive user experience.
+![Screenshot](Screenshot.png)
+
 
 ## Features
 
@@ -43,7 +45,6 @@ Try the application live at:
     image MIME type.
 -   `config.toml`: Configures the Streamlit theme (dark mode with light
     green accents).
--   `secrets.toml`: Stores sensitive data like the Google API key.
 -   `requirements.txt`: Lists Python dependencies.
 -   `packages.txt`: Specifies system-level dependencies (e.g.,
     `poppler-utils`).
